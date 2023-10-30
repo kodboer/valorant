@@ -19,8 +19,8 @@ void exit_button()
 
 void StartThreads()
 {
-	HWID::checkHwid();
-	Settings::Load();
+	HWID::checkHwid(wess);
+	Settings::Load(wess);
 	Settings::running = true;
 
 	do {
